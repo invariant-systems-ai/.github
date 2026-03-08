@@ -10,7 +10,7 @@
 
 ### What We Do
 
-We build verifiable computing infrastructure for the AI era. Every AI-generated commit gets a tamper-proof cryptographic receipt — audit trail you can prove, not just claim.
+We build verifiable computing infrastructure for the AI era. Every AI-generated commit gets a tamper-evident cryptographic receipt — audit trail you can prove, not just claim.
 
 ### AIIR — AI Integrity Receipts
 
