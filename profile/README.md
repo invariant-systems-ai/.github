@@ -18,7 +18,7 @@ We build verifiable computing infrastructure for the AI era. Every AI-generated 
 |:--|:--|
 | **PyPI** | [`pip install aiir`](https://pypi.org/project/aiir/) |
 | **GitHub Action** | [`invariant-systems-ai/aiir@v1`](https://github.com/invariant-systems-ai/aiir) |
-| **MCP Tool** | Works with Claude, Copilot, Cursor |
+| **MCP Tool** | Works with Claude, Copilot, Cursor, Continue, Cline, Windsurf |
 | **License** | Apache 2.0 · Zero dependencies · Python 3.9+ |
 
 ### Company
