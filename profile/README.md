@@ -22,7 +22,7 @@ We build verifiable infrastructure for software teams using AI tools. AIIR gener
 | **MCP Tool** | Works with Claude, Copilot, Cursor, Continue, Cline, Windsurf |
 | **License** | Apache 2.0 · Zero dependencies · Python 3.9+ |
 
-Security posture: 1,856 tests, 100% coverage, 34 CI checks per push, public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md), ClusterFuzzLite fuzzing, mutation testing. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
+Security posture: 1,856 tests, 100% coverage, 36 CI checks per push, public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md), ClusterFuzzLite fuzzing, mutation testing. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
 
 Detection is heuristic: AIIR receipts what's *declared* — `Co-authored-by` trailers, bot authors, AI-tool markers. Agent-mode sessions (Copilot Chat, Claude Code, Cursor Agent) don't add these markers today, so those commits attest as `human`. See [detection scope](https://github.com/invariant-systems-ai/aiir#detection-scope-and-limitations) for dogfood numbers.
 
