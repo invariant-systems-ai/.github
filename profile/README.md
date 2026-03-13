@@ -19,6 +19,7 @@ We build verifiable infrastructure for software teams using AI tools. AIIR gener
 | **PyPI** | [`pip install aiir`](https://pypi.org/project/aiir/) |
 | **GitHub Action** | [`invariant-systems-ai/aiir@v1`](https://github.com/invariant-systems-ai/aiir) |
 | **GitLab CI** | One `include:` line — push and MR receipts |
+| **VS Code** | [Extension](https://github.com/invariant-systems-ai/aiir/tree/main/extensions/vscode) — receipt explorer, inline verification, AI tool detection |
 | **MCP Tool** | Works with Claude, Copilot, Cursor, Continue, Cline, Windsurf |
 | **License** | Apache 2.0 · Zero dependencies · Python 3.9+ |
 
