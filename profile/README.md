@@ -18,7 +18,7 @@ We build public, verifiable infrastructure for software teams using AI tools. AI
 |:--|:--|
 | **PyPI** | [`pip install aiir`](https://pypi.org/project/aiir/) |
 | **GitHub Action** | [`invariant-systems-ai/aiir@v1`](https://github.com/invariant-systems-ai/aiir) |
-| **GitLab CI** | One `include:` line — push and MR receipts |
+| **GitLab CI** | One `include:` line — push and MR receipts · [GitLab Technology Partner](https://about.gitlab.com/partners/technology-partners/) |
 | **VS Code** | [Extension](https://github.com/invariant-systems-ai/aiir/tree/main/extensions/vscode) — local-first commit receipts, inline verification, receipt explorer |
 | **AI Assistants via MCP** | Works with Claude, Copilot, Cursor, Continue, Cline, Windsurf |
 | **License** | Apache 2.0 · Zero runtime dependencies (CLI core) · Python 3.9+ |
