@@ -31,7 +31,7 @@ Detection is heuristic: AIIR records what is *declared* — `Co-authored-by` tra
 
 Invariant Systems, Inc. Delaware C-Corp. Founded 2025.
 
-Contact: noah@invariantsystems.io
+[Website](https://invariantsystems.io) · [Docs](https://invariantsystems.io/docs) · [Browser Verifier](https://invariantsystems.io/verify) · Contact: noah@invariantsystems.io
 
 ---
 
