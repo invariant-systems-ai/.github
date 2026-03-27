@@ -6,7 +6,7 @@ applyTo: "**"
 Public workspace scope is limited to:
 - aiir/
 - invariantsystems.io/
-- org-github-profile/
+- dot-github/
 
 Hard boundary:
 - Treat this workspace as public T0 only.
@@ -23,7 +23,7 @@ Operational defaults:
 Repo-specific rules:
 - If editing aiir/, read aiir/AGENTS.md first and follow it.
 - Keep AIIR stdlib-only where repo rules require it.
-- Preserve branding consistency across invariantsystems.io, org-github-profile, and the AIIR extension.
+- Preserve branding consistency across invariantsystems.io, dot-github, and the AIIR extension.
 - Reuse existing public assets and copy before inventing new branding.
 
 Primary goals in this workspace:
