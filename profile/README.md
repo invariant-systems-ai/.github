@@ -23,7 +23,7 @@ We build public, verifiable infrastructure for software teams using AI tools. AI
 | **AI Assistants via MCP** | Works with Claude, Copilot, Cursor, Continue, Cline, Windsurf |
 | **License** | Apache 2.0 · Zero runtime dependencies (CLI core) · Python 3.9+ |
 
-Security posture: 2,016 tests, 100% coverage, 41 CI checks per push, public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md), ClusterFuzzLite fuzzing, and mutation testing. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
+Security posture: 2,016 tests, 100% coverage, and a public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md) with 153 security controls, plus ClusterFuzzLite fuzzing and mutation testing. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
 
 Detection is heuristic: AIIR records what is *declared* — `Co-authored-by` trailers, bot authors, and AI-tool markers. Agent-mode sessions such as Copilot Chat, Claude Code, and Cursor Agent do not add these markers today, so those commits can still land in the `human` bucket unless the tool or user declares them explicitly. See [detection scope](https://github.com/invariant-systems-ai/aiir#detection-scope-and-limitations) for current public limits.
 
