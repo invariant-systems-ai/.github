@@ -27,7 +27,7 @@ AIIR (AI Integrity Receipts) is the missing provenance layer between authorship 
 | **AI Assistants via MCP** | Works with Claude, Copilot, Cursor, Continue, Cline, Windsurf |
 | **License** | Apache 2.0 · Zero runtime dependencies (CLI core) · Python 3.9+ |
 
-Security posture: 2,016 tests, 100% coverage, and a public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md) with 153 security controls, plus ClusterFuzzLite fuzzing and mutation testing. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
+Security posture: 2,245 tests, 100% coverage, and a public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md) with 153 security controls, plus ClusterFuzzLite fuzzing and mutation testing. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
 
 How it fits: AIIR fills the authorship-provenance gap *before* build-level tools (SLSA, in-toto, SCITT) kick in. See [ecosystem positioning](https://github.com/invariant-systems-ai/aiir/blob/main/docs/ecosystem.md) for the full picture.
 
