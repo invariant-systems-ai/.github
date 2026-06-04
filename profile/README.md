@@ -29,7 +29,7 @@ Public research extends the same receipt model to inference receipts and receipt
 | **AI Assistants via MCP** | Works with Claude, Copilot, Cursor, Continue, Cline, Windsurf |
 | **License** | Apache 2.0; zero runtime dependencies (CLI core); Python 3.9+ |
 
-Security posture: 2,299 collected tests, 100% coverage, and a public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md) with 150+ documented security controls, plus ClusterFuzzLite fuzzing, mutation testing, and conformance vectors. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
+Security posture: 2,499 collected tests, 100% coverage, and a public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md) with 150+ documented security controls, plus ClusterFuzzLite fuzzing, mutation testing, and conformance vectors. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
 
 How it fits: AIIR fills the authorship-provenance gap *before* build-level tools (SLSA, in-toto, SCITT) kick in. See [ecosystem positioning](https://github.com/invariant-systems-ai/aiir/blob/main/docs/ecosystem.md) and the public [Research](https://invariantsystems.io/research) page for the current public picture.
 
