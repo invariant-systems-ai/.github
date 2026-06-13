@@ -2,7 +2,7 @@
 
 ## Invariant Systems
 
-**Receipt-based provenance for AI-assisted software.**
+**Verifiable computing: receipts, proofs, and replayable evidence.**
 
 </div>
 
@@ -10,13 +10,13 @@
 
 ### The Problem
 
-AI tools write an increasing share of production code, but git history can't answer *which changes were AI-generated*. Trailers are inconsistent, easy to strip, and not machine-verifiable. Most AI involvement leaves no durable, tamper-evident trace.
+Modern systems make claims constantly: this commit declared AI involvement, this model produced that output, this action earned that payout. Almost none of those claims come with evidence a third party can check. The most concrete case today: AI tools write an increasing share of production code, but git history can't answer *which changes were AI-generated*. Trailers are inconsistent, easy to strip, and not machine-verifiable.
 
 ### What We Build
 
-AIIR (AI Integrity Receipts) is the current public product surface. It generates deterministic, content-addressed receipts for commits with declared AI involvement and verifies them anywhere: locally, in CI, or offline, without trusting a central service.
+AIIR (AI Integrity Receipts) is our first shipped product. It generates deterministic, content-addressed receipts for commits with declared AI involvement and verifies them anywhere: locally, in CI, or offline, without trusting a central service.
 
-Public research extends the same receipt model to inference receipts and receipted actions. See the [Research](https://invariantsystems.io/research) page for the linked Zenodo papers and reproducibility capsules.
+Public research extends the same receipt model further: inference receipts and receipted actions (attestable AI), plus evidence-first capsules in physics and mathematics, published Zenodo-first with open DOIs and explicit claim boundaries. See the [Research](https://invariantsystems.io/research) page for the linked Zenodo records and reproducibility capsules.
 
 ### AIIR | AI Integrity Receipts
 
