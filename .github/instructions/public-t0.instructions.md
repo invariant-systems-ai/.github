@@ -4,7 +4,6 @@ applyTo: "**"
 ---
 
 Public workspace scope is limited to:
-- aiir/
 - invariantsystems.io/
 - dot-github/
 
@@ -21,9 +20,7 @@ Operational defaults:
 - Keep all user-facing text safe for docs, release notes, screenshots, and marketplace listing copy.
 
 Repo-specific rules:
-- If editing aiir/, read aiir/AGENTS.md first and follow it.
-- Keep AIIR stdlib-only where repo rules require it.
-- Preserve branding consistency across invariantsystems.io, dot-github, and the AIIR extension.
+- Preserve branding consistency across invariantsystems.io and dot-github.
 - Reuse existing public assets and copy before inventing new branding.
 
 Primary goals in this workspace:
@@ -41,7 +38,6 @@ Working style:
 - When discussing files or behavior, stay grounded in the checked-out code.
 
 Good default focus areas:
-- AIIR extension UX and packaging
 - public docs and README quality
 - marketplace and release polish
 - website consistency and verification UX
