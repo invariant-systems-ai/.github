@@ -40,4 +40,4 @@ Invariant Systems is a Delaware C-corporation (USA).
 
 ---
 
-<sub>© 2025-2026 Invariant Systems, Inc.</sub>
+<sub>© 2026 Invariant Systems</sub>
