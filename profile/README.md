@@ -2,7 +2,7 @@
 
 ## Invariant Systems
 
-**Verifiable computing: receipts, proofs, and replayable evidence.**
+**Dependable computation. Find hidden failures. Keep the evidence.**
 
 </div>
 
@@ -10,36 +10,33 @@
 
 ### The Problem
 
-Modern systems make claims constantly: this commit declared AI involvement, this model produced that output, this action earned that payout. Almost none of those claims come with evidence a third party can check. The most concrete case today: AI tools write an increasing share of production code, but git history can't answer *which changes were AI-generated*. Trailers are inconsistent, easy to strip, and not machine-verifiable.
+Computers can return wrong answers without crashing. ECC protects against covered data errors, but a command can arrive intact and still belong to the wrong operation. Silent computational failures have been documented in production by [Google](https://research.google/pubs/cores-that-dont-count/) and [Meta](https://engineering.fb.com/2021/02/23/data-infrastructure/silent-data-corruption/).
 
-### What We Build
+### Our First Product
 
-AIIR (AI Integrity Receipts) is our first shipped product. It generates deterministic, content-addressed receipts for commits with declared AI involvement and verifies them anywhere: locally, in CI, or offline, without trusting a central service.
+Our first product in development is an FPGA hardware integrity supervisor that complements ECC. Our supervisor is designed to check relationships defined with domain experts and preserve evidence when those checks fail. We start with a paid evaluation of one command or data path: agree on the checks, inject faults, and compare the evidence with your current approach. Prototype stage. Building toward a supported, licensable component.
 
-Public research extends the same receipt model further: inference receipts and receipted actions (attestable AI), plus evidence-first capsules in physics and mathematics, published Zenodo-first with open DOIs and explicit claim boundaries. See the [Research](https://invariantsystems.io/research) page for the linked Zenodo records and reproducibility capsules.
+In one recorded FPGA test, an injected fault raised a mismatch while redundancy kept the output correct. Controlled prototype result. Complete hardware integration and production qualification remain ahead. [Explore the technology & evidence](https://invariantsystems.io/#evidence)
 
-### AIIR | AI Integrity Receipts
+### The Same Problem, Across Layers
 
-| | |
-|:--|:--|
-| **PyPI** | [`pip install aiir`](https://pypi.org/project/aiir/) |
-| **GitHub Action** | [`invariant-systems-ai/aiir@v1`](https://github.com/invariant-systems-ai/aiir) |
-| **GitLab CI** | One `include:` line: push and MR receipts; [GitLab Technology Partner](https://about.gitlab.com/partners/technology-partners/) |
-| **VS Code** | [Extension](https://github.com/invariant-systems-ai/aiir/tree/main/extensions/vscode): local-first commit receipts, inline verification, receipt explorer |
-| **AI Assistants via MCP** | Works with Claude, Copilot, Cursor, Continue, Cline, Windsurf |
-| **License** | Apache 2.0; zero runtime dependencies (CLI core); Python 3.9+ |
+We're pursuing the same reliability problem through software checks, formal reasoning, and hardware supervision. Proofs establish properties within their model and assumptions. FPGA results cover specific tested conditions. Hardware correspondence, broader fault coverage, and production qualification remain separate work. Technical evaluation packets are available under NDA.
 
-Security posture: 2,499 collected tests, 100% coverage, and a public [threat model](https://github.com/invariant-systems-ai/aiir/blob/main/THREAT_MODEL.md) with 150+ documented security controls, plus ClusterFuzzLite fuzzing, mutation testing, and conformance vectors. JSON and deterministic CBOR receipt formats. Optional Sigstore signing and PEP 740 attestations.
+### Public Research
 
-How it fits: AIIR fills the authorship-provenance gap *before* build-level tools (SLSA, in-toto, SCITT) kick in. See [ecosystem positioning](https://github.com/invariant-systems-ai/aiir/blob/main/docs/ecosystem.md) and the public [Research](https://invariantsystems.io/research) page for the current public picture.
+Records on Zenodo:
 
-Detection is heuristic: AIIR records what is *declared*: `Co-authored-by` trailers, bot authors, and AI-tool markers. Agent-mode sessions such as Copilot Chat, Claude Code, and Cursor Agent do not add these markers today, so those commits can still land in the `human` bucket unless the tool or user declares them explicitly. See [detection scope](https://github.com/invariant-systems-ai/aiir#detection-scope-and-limitations) for current public limits.
+- *The exact fourth-vector feasibility wall of the canonical MUB triple in dimension six*: [10.5281/zenodo.20670933](https://doi.org/10.5281/zenodo.20670933) · [`mub6-wall-atlas`](https://github.com/invariant-systems-ai/mub6-wall-atlas)
+- *Inference Receipts: Lightweight Cryptographic Commitment Chains for Auditable Generative AI*: [10.5281/zenodo.18888733](https://doi.org/10.5281/zenodo.18888733)
+- *Receipted Actions: A Reproducible Audit Capsule for Rewarded-Action Payout Adjudication*: [10.5281/zenodo.20008485](https://doi.org/10.5281/zenodo.20008485)
+- *An Evidence-First Reproducibility Capsule for NISQ Benchmarking*: [10.5281/zenodo.19954163](https://doi.org/10.5281/zenodo.19954163) · [`research-evidence-log`](https://github.com/invariant-systems-ai/research-evidence-log)
+- *Order-Dependent Breakdown of the Fricke-Vogt Invariant Under Higher-Order n-Bonacci Recursions*: [10.5281/zenodo.18882504](https://doi.org/10.5281/zenodo.18882504)
 
 ### Company
 
-Invariant Systems, Inc. is a Delaware C-Corp founded in 2025.
+Invariant Systems is a Delaware C-corporation (USA).
 
-[Website](https://invariantsystems.io) | [Docs](https://invariantsystems.io/docs) | [Research](https://invariantsystems.io/research) | [Browser Verifier](https://invariantsystems.io/verify) | Contact: noah@invariantsystems.io
+[Website](https://invariantsystems.io) | [About](https://invariantsystems.io/about.html) | [Discuss an FPGA evaluation](mailto:noah@invariantsystems.io?subject=FPGA%20supervisor%20evaluation) | Contact: noah@invariantsystems.io
 
 ---
 
